@@ -11,13 +11,6 @@ public class KeyController : InputController
 
     public override float GetTurn()
     {
-        float turn = 0;
-
-        if (Input.GetKey(KeyCode.E))
-            turn++;
-        if (Input.GetKey(KeyCode.Q))
-            turn--;
-
-        return turn;
+        return Input.GetAxis("Mouse X");
     }
 }

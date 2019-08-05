@@ -46,8 +46,6 @@ public class MazeGenerator
         {
             current.RemoveBottomWall();
         }
-
-        Debug.Log(current._x + " - " + current._y);
     }
 
     private void GenerateMaze(MazeCell[,] maze)
